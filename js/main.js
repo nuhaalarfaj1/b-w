@@ -14,17 +14,19 @@
 var colors = [
    { name: 1,
    means: ' you are often artistic and sensitive'
+  
 },
 {
     name:2,
     means:'you are often organized and logical',
-    
+   
 }
 
 ];
 var input = document.getElementById("colorsname");
 var myh1 = document.getElementById("name");
 var myh2 = document.getElementById("means");
+var myimg1 = document.getElementById("1");
 
 
 
@@ -33,6 +35,8 @@ function getinfo(){
         if(input.value == colors[i].name){
 myh1.innerText = colors[i].name;
 myh2.innerText = colors[i].means;
+
+myimg1.setAttribute("src", "1.jpg");
         }
     };
 
